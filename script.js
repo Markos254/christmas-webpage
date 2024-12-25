@@ -11,7 +11,25 @@ function createSnowflakes() {
     }
   }
   createSnowflakes();
+ // Function to control background music
+        const backgroundMusic = document.getElementById("background-music");
+        let isLooping = false;
 
+        // Function to play or pause the music
+        function toggleAudio() {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+            } else {
+                backgroundMusic.pause();
+            }
+        }
+
+        // Function to toggle the loop of the music
+        function toggleLoop() {
+            isLooping = !isLooping;
+            backgroundMusic.loop = isLooping;
+            alert(isLooping ? "Looping enabled!" : "Looping disabled!");
+        }
   function playBellSound() {
     document.getElementById('bell-sound').play();
   }
