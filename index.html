@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio id="background-music" autoplay loop>
+    <audio id="background-music">
         <source src="videoplayback.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
@@ -16,6 +16,8 @@
     <p>Wishing you peace, love, and joy this holiday season. Have a magical Christmas and a New Year filled with blessings! 🎅🎁</p>
     <a href="#" class="button" onclick="alert('🎄✨ Ho! Ho! Ho! 🎅\n\nMay your heart be filled with laughter, your home with love, and your days with joy this Christmas season. 🌟🎁\n\nSpread the magic of the holidays and keep the spirit alive! ❄️❤️')">Letter from Santa 🎅</a>
     <button onclick="playBellSound()" class="button">A voice-message from Santa 🎅</button>
+    <button onclick="toggleAudio()" class="button">Play/Pause Background Music</button>
+        <button onclick="toggleLoop()" class="button">Toggle Loop</button>
     <audio id="bell-sound">
       <source src="536245__cloud-10__ho-ho-ho-merry-christmas.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
